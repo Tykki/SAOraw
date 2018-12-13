@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!--FontAwesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome-animation/0.1.0/font-awesome-animation.css">
+    <!--SideNavagation-->
+    <link rel="stylesheet" type="text/css" href="SAO.css">
+</head>
+<body>
+    
+<header id="header">
+    <section class="container-fluid">
+        <div class="row">
+            <div class="col justify-content-center">
+                <h1 class="justify-content-center">Header</h1>  
+            </div>
+            <i id="sign-out" class="align-self-center fas fa-lg fa-sign-out-alt justify-content-end"></i>
+        </div>
+    </section>
+    
+</header>
+
+<nav class="nav-side-menu">
+    
+    <div class="brand">
+        <div id="toggle-wrap" class="faa-parent animated-hover">
+            <i class="fas fa-lg fa-arrow-left faa-passing-reverse faa-fast"></i>
+        </div>
+        <strong>Student Affairs</strong>
+    </div>
+    <i class="fas fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
+    <div class="menu-list">
+        <ul id="menu-content" class="menu-content collapse out">
+            <li class="active blink">
+                <a href="#">
+                    <i class="fas fa-tachometer-alt fa-lg"></i> <strong> Dashboard</strong>
+                </a>
+            </li>
+            <li id="rGroup" data-toggle="collapse" data-target="#ResourseGroup" class="collapsed">
+                <a href="#"><i class="fas fa-link fa-lg"></i> <strong id="rName"> Resourse Group</strong> <span class="arrow"></span></a>
+            </li>
+            <ul class="sub-menu collapse" id="ResourseGroup">
+                <li class="active"><a href="#"><strong id="rLink">Group Resource</strong></a></li>
+            </ul>
+            <li class="blink prof">
+                <a href="#">
+                    <i class="fas fa-user fa-lg"></i> <strong>Profile</strong>
+                </a>
+            </li>
+            <li class="blink">
+                <a href="#">
+                    <i class="fas fa-cog fa-lg"></i> <strong>System</strong>
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<main class="container-fluid" id="display">
+    <section class="row">
+        <article class="col-12">
+            <div class="card">
+                <div class="card-body">
+                    <h3 class="card-title">Card Title</h3>
+                    <strong>First Name: </strong><label id="fName">N/A</label>
+                    <br>
+                    <strong>Last Name: </strong><label id="lName">N/A</label>
+                    <br>
+                    <strong>Email: </strong><label id="email">N/A</label>
+                </div>
+            </div>
+                
+                <!-- <br>
+                <strong>Department: </strong><label id="dName">N/A</label> -->
+
+                
+           
+        </article>
+    </section>
+    <section class="row">
+        <article class="col-xs-12 col-sm-6">
+            <div class="card">
+                <div class="card-body">
+                    <h3 class="card-title">Card Title</h3>
+                    <p class="card-text"> Random text</p>
+                </div>
+            </div>
+        </article>
+        <article class="col-xs-12 col-sm-6">
+            <div class="card">
+                <div class="card-body">
+                    <h3 class="card-title">Card Title</h3>
+                    <p class="card-text"> Random text</p>
+                </div>
+            </div>
+        </article>
+    </section>
+    <section class="row">
+        <article class="col-xs-12 col-sm-4">
+            <div class="card">
+                <div class="card-body">
+                    <h3 class="card-title">Card Title</h3>
+                    <p class="card-text"> Random text</p>
+                </div>
+            </div>
+        </article>
+        <article class="col-xs-12 col-sm-4">
+            <div class="card">
+                <div class="card-body">
+                    <h3 class="card-title">Card Title</h3>
+                    <p class="card-text"> Random text</p>
+                </div>
+            </div>
+        </article>
+        <article class="col-xs-12 col-sm-4">
+            <div class="card">
+                <div class="card-body">
+                    <h3 class="card-title">Card Title</h3>
+                    <p class="card-text"> Random text</p>
+                </div>
+            </div>
+        </article>
+        <article class="col-xs-12 col-sm-12">
+            <div class="card">
+                <div class="card-body">
+                    <h3 class="card-title">Card Title</h3>
+                    <p class="card-text"> Random text</p>
+                </div>
+            </div>
+        </article>
+    </section>
+</main>
+    <footer class="container-fluid" id="footer">
+        <section class="col-12">
+            <h1>Footer</h1>
+        </section>
+    </footer>
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<script type="text/javascript" src="https://www.google-analytics.com/analytics.js">
+</script>
+
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-40969558-5', 'auto');
+ga('send', 'pageview');
+</script>
+
+<script type="text/javascript" src="SAO.js"></script>
+
+
+
+</body>
+</html>

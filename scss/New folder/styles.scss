@@ -1,0 +1,32 @@
+/*
+The CSS for the side bar is made to work with bootstrap 4 and Font Awesome 5 
+in mind and has not been tested on any other bootstrap version.
+the only class that has been changed in the bootstrap library is brand.
+*/
+
+@import "globals";
+@import "sideNav";
+
+#toggle-wrap{
+    /*width: 20px;*/
+    color: $navLink;
+    margin-right: 48px;
+    margin-left: 13px;
+    top: 15px;
+}
+
+#toggle-wrap.active {
+  color: $accentRed;
+}
+
+.card{
+  margin-bottom: 15px;
+}
+
+main{
+  margin-bottom: 50px;
+}
+
+form label{
+  font-weight: bold;
+}

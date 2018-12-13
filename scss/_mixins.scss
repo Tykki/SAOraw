@@ -1,0 +1,110 @@
+$Theme: Dark;
+
+/*UIC Web Color Palette*/
+$Black: #000000;
+$DarkBlue: #1C2C3E;
+$UICblue: #2C5581;
+$MedBlue: #96ADC9;
+$LightBlue: #D6DFEB;
+$UICRed: #CC0000;
+$MedRed: #B30000;
+$DarkRed: #990000;
+$MedGrey: #9A9A9A;
+$LightGrey: #EBEBEB;
+$DarkGreen: #459999;
+$MedGreen: #CFEBEB;
+$LightGreen: #E8F8F8;
+
+/*UIC Marketing Exceptable Colors*/
+$Prime1: #D50032;
+$Prime2: #00B5E2;
+$Prime3: #001E62;
+$Secondary1: #FFC72C;
+$Secondary2: #BB16A3;
+$Secondary3: #00AEC7;
+$Secondary4: #FF7500;
+$Secondary5: #10069F;
+$Secondary6: #EF4A81;
+$Secondary7: #2CD5C4;
+$Secondary8: #80276C;
+$Secondary9: #E1E000;
+
+@mixin ThemeSet($Theme) {
+  @if $Theme == Dark {
+    $headerColor: $DarkBlue;
+    $footerColor: #031325;
+    $navPrimary: $DarkBlue;
+    $navSecondary: #031325;
+    $navAccentPrimary: $UICRed;
+    $navAccentSecondary: #364658;
+    $navLink: #e1ffff;
+    $navOpen: #181c20;
+    $navOpenHover: #020203;
+    $backgroundColor: #f8f8f8;
+    @content;
+  }
+  @else if $Theme == Light {
+    $headerColor: #38587E;
+    $footerColor: #d8d8d8;
+    $navPrimary: #2C5581;
+    $navSecondary: linear-gradient(to right, #38587e 0%, #d6dfeb 50%, #38587e 100%);
+    $navAccentPrimary: $UICRed;
+    $navAccentSecondary: #4F77A1;
+    $navLink: #e1ffff;
+    $navOpen: #153B63;
+    $navOpenHover: #1C2C3E;
+    $backgroundColor: $LightBlue;
+  }
+  @else if $Theme == Other {
+    $headerColor: #007788;
+    $footerColor: #d8d8d8;
+    $navPrimary: linear-gradient(to bottom, #00aec7 0%, #d6dfeb 100%);
+    $navSecondary: #00aec7;
+    $navAccentPrimary: $UICRed;
+    $navAccentSecondary: #007788;
+    $navLink: #e1ffff;
+    $navOpen: #001E62;
+    $navOpenHover: #1C2C3E;
+    $backgroundColor: $LightBlue;
+  }
+}
+
+@mixin theme($Color) {
+  background-color: $Color;
+}
+
+/*Dark Theme*/
+/*$headerColor: $DarkBlue;
+$footerColor: #031325;
+$navPrimary: $DarkBlue;
+$navSecondary: #031325;
+$navAccentPrimary: $UICRed;
+$navAccentSecondary: #364658;
+$navLink: #e1ffff;
+$navOpen: #181c20;
+$navOpenHover: #020203;
+$backgroundColor: #f8f8f8;*/
+
+/*Light Theme*/
+$headerColor: #38587E !default;
+$footerColor: #d8d8d8 !default;
+$navPrimary: #2C5581;
+$navSecondary: linear-gradient(to right, #38587e 0%, #d6dfeb 50%, #38587e 100%);
+$navAccentPrimary: $UICRed;
+$navAccentSecondary: #4F77A1;
+$navLink: #e1ffff;
+$navOpen: #153B63;
+$navOpenHover: #1C2C3E;
+$backgroundColor: $LightBlue;
+
+/*Back Up Theme*/
+/*$headerColor: #007788;
+$footerColor: #d8d8d8;
+$navPrimary: linear-gradient(to bottom, #00aec7 0%, #d6dfeb 100%);
+$navSecondary: #00aec7;
+$navAccentPrimary: $UICRed;
+$navAccentSecondary: #007788;
+$navLink: #e1ffff;
+$navOpen: #001E62;
+$navOpenHover: #1C2C3E;
+$backgroundColor: $LightBlue;*/

@@ -1,0 +1,122 @@
+.nav-side-menu {
+  overflow: auto;
+  font-family: verdana;
+  font-size: 12px;
+  font-weight: 200;
+  background-color: $navBlue;
+  position: fixed;
+  top: 0px;
+  width: 300px;
+  height: 100%;
+  color: $navLink;
+  /*display: ;*/
+ 
+  .brand {
+    background-color: $brandBlue;
+    line-height: 50px;
+    display: flex;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    color: $accentRed;
+  }
+
+  .toggle-btn {
+    display: none;
+  }
+
+  ul, li {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    line-height: 35px;
+    cursor: pointer;
+    /*    
+      .collapsed{
+         .arrow:before{
+                   font-family: FontAwesome;
+                   content: "\f053";
+                   display: inline-block;
+                   padding-left:10px;
+                   padding-right: 10px;
+                   vertical-align: middle;
+                   float:right;
+              }
+       }
+  */
+  }
+
+  ul :not(collapsed) .arrow:before,
+  li :not(collapsed) .arrow:before {
+    font-family: 'Font Awesome 5 Free';
+    content: "\f107";
+    font-weight: 900;
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+    vertical-align: middle;
+    float: right;
+  }
+
+  ul .active,
+  li .active {
+    border-left: 3px solid $accentRed;
+    background-color: $navActive;
+  }
+  ul .sub-menu li.active,
+  li .sub-menu li.active {
+    color: $accentRed;
+  }
+  ul .sub-menu li.active a,
+  li .sub-menu li.active a {
+    color: $accentRed;
+  }
+  ul .sub-menu li,
+  li .sub-menu li {
+    background-color: $navOpen;
+    border: none;
+    line-height: 28px;
+    border-bottom: 1px solid #23282e;
+    margin-left: 0px;
+  }
+  ul .sub-menu li:hover,
+  li .sub-menu li:hover {
+    background-color: $navOpenActive;
+  }
+  ul .sub-menu li:before,
+  li .sub-menu li:before {
+    font-family: 'Font Awesome 5 Free';
+    content: "\f105";
+    font-weight: 900;
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+    vertical-align: middle;
+  }
+  li {
+    padding-left: 0px;
+    border-left: 3px solid $navBlue;
+    border-bottom: 1px solid #23282e;
+  }
+  li a {
+    text-decoration: none;
+    color: $navLink;
+  }
+  li a i {
+    padding-left: 10px;
+    width: 20px;
+    padding-right: 20px;
+  }
+  li:hover {
+    border-left: 3px solid $accentRed;
+    background-color: $navActive;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+  }
+}
+
+@import "sideNavResponse";
+@import "sideNavAvi"

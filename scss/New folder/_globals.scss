@@ -1,0 +1,87 @@
+$accentRed: #CC0000;
+$brandBlue: #031325;
+$navBlue: #1C2C3E;
+$navActive: #364658;
+$navLink: #e1ffff;
+$navOpen: #181c20;
+$navOpenActive: #020203;
+$backgroundColor: #f8f8f8;
+
+body{
+  font-family: Theinhardt,"Helvetica Neue",Helvetica,Arial,sans-serif;
+	background-color: $backgroundColor;
+}
+
+a{
+	color: $navLink;
+}
+
+#avatar{
+	display: none;
+}
+
+#footer{
+  width: calc(100% - 300px);
+  float: right;
+  text-align: center;
+  height: 56px;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+  background-color: $brandBlue;
+  color: $accentRed;
+  font-size: 14px;
+  .row{
+  	height: 100%;
+  	margin-top: 10px;
+  }
+}
+
+#header{
+  width: calc(100% - 300px);
+  float: right;
+  text-align: center;
+  height: 50px;
+  background-color: $navBlue;
+  margin-bottom: 15px;
+  color: white;
+  a {
+  	&:hover{
+  		color: $accentRed;
+  	};
+  	&:last-child{
+	  	margin: auto 24px auto 24px;
+  	};
+  		
+  	&:hover{
+  		text-decoration: none;
+  	};
+  	color: $navLink;
+  }
+  span{
+	font-size: small;
+  }
+}
+
+.has-badge[data-count]{
+	position: relative;
+	&:after{
+		position:absolute;
+		right:-45%;
+		top:-45%;
+		content: attr(data-count);
+		font-size:66%;
+		padding:.2em;
+		border-radius:50%;
+		line-height:1em;
+		color: white;
+		background: $accentRed;
+		text-align:center;
+		min-width: 1.1em;
+	}
+	&:hover:after{
+	 	background: white;
+	  	color: $accentRed;
+	};
+	
+}

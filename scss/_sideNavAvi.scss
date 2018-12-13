@@ -1,0 +1,14 @@
+#avatar{
+	border-radius: 50%;
+	margin: auto 24px auto auto;
+	position: relative;
+	z-index: 99;
+	max-height: 48px;
+	/*width: 46px;*/
+}
+
+@media screen and (max-width: 767px) {
+	#avatar{
+		margin: auto;
+	}
+}

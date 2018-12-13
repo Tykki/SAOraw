@@ -1,0 +1,227 @@
+/*UIC Web Color Palette*/
+$Black: #000000;
+$DarkBlue: #1C2C3E;
+$UICblue: #001E62;
+$MedBlue: #96ADC9;
+$LightBlue: #D6DFEB;
+$UICRed: #D50032;
+$MedRed: #B30000;
+$DarkRed: #990000;
+$MedGrey: #9A9A9A;
+$LightGrey: #EBEBEB;
+$DarkGreen: #459999;
+$MedGreen: #CFEBEB;
+$LightGreen: #E8F8F8;
+
+/*UIC Marketing Exceptable Colors*/
+$Prime1: #D50032;
+$Prime2: #00B5E2;
+$Prime3: #001E62;
+$Secondary1: #FFC72C;
+$Secondary2: #BB16A3;
+$Secondary3: #00AEC7;
+$Secondary4: #FF7500;
+$Secondary5: #10069F;
+$Secondary6: #EF4A81;
+$Secondary7: #2CD5C4;
+$Secondary8: #80276C;
+$Secondary9: #E1E000;
+
+/*Dark Theme*/
+/*$headerColor: $DarkBlue;
+$footerColor: #031325;
+$navPrimary: $DarkBlue;
+$navSecondary: #031325;
+$navAccentPrimary: $UICRed;
+$navAccentSecondary: #364658;
+$navLink: #e1ffff;
+$navOpen: #181c20;
+$navOpenHover: #020203;
+$backgroundColor: #f8f8f8;*/
+
+/*Light Theme*/
+/*$headerColor: #38587E;
+$footerColor: #d8d8d8;
+$navPrimary: #2C5581;
+$navSecondary: linear-gradient(to right, #38587e 0%, #d6dfeb 50%, #38587e 100%);
+$navAccentPrimary: $UICRed;
+$navAccentSecondary: #4F77A1;
+$navLink: #e1ffff;
+$navOpen: #153B63;
+$navOpenHover: #1C2C3E;
+$backgroundColor: $LightBlue;
+$headerLink: $navLink;
+$toggleArrow: $navLink;*/
+
+
+
+/*Wayne's Theme*/
+$headerColor: white;
+$brandColor: $Prime2;
+$footerColor: #f8f8f8 !default;
+$navPrimary: white;
+$navAccentPrimary: $UICRed;
+$navAccentSecondary: #b8eaf7;
+$navLink: grey;
+$navOpen: $LightGrey;
+$navOpenHover: white;
+$backgroundColor: #f3f7fb !important;
+$headerLink: grey;
+$toggleArrow: white;
+$aviPopoverIconColor: $Prime2;
+$theme-colors: ("primary": $UICblue, "UICred": $UICRed, "prime2": $Prime2, "secondary4": $Secondary4);
+
+/*Back Up Theme*/
+/*$headerColor: #007788;
+$footerColor: #d8d8d8;
+$navPrimary: linear-gradient(to bottom, #00aec7 0%, #d6dfeb 100%);
+$navSecondary: #00aec7;
+$navAccentPrimary: $UICRed;
+$navAccentSecondary: #007788;
+$navLink: #e1ffff;
+$navOpen: #001E62;
+$navOpenHover: #1C2C3E;
+$backgroundColor: $LightBlue;*/
+
+@font-face {
+   font-family: Circular;
+   src: url(assets/Circular/CircularStd-Book.otf);
+}
+
+@font-face {
+   font-family: Circular;
+   src: url(assets/Circular/CircularStd-Bold.otf);
+   font-weight: bold;
+}
+
+
+body{
+  font-family: Circular !important;
+	background-color: $backgroundColor;
+}
+
+#main-content {
+  /*max-width: 1354px;*/
+  margin: auto;
+}
+
+a {
+	color: $navLink;
+}
+
+#avatar{
+	display: none;
+}
+
+#footer{
+  width: calc(100% - 300px);
+  float: right;
+  text-align: center;
+  /*height: 56px;*/
+  right: 0;
+  bottom: 0;
+  position: relative;
+  background-color: $footerColor;
+  color: $navAccentPrimary;
+  font-size: 14px;
+  .row{
+  	height: 100%;
+  	margin-top: 10px;
+  }
+}
+
+#header{
+  width: calc(100% - 300px);
+  float: right;
+  text-align: center;
+  height: 50px;
+  background-color: $headerColor;
+  margin-bottom: 15px;
+  color: grey;
+  a {
+  	&:hover{
+  		color: $navAccentPrimary;
+  	};
+  	&:last-child{
+	  	margin: auto 24px auto auto;
+  	};
+  		
+  	&:hover{
+  		text-decoration: none;
+  	};
+  	color: $headerLink;
+  }
+  span{
+	font-size: small;
+  }
+}
+
+.has-badge[data-count]{
+	position: relative;
+	&:after{
+		position:absolute;
+		right:-45%;
+		top:-45%;
+		content: attr(data-count);
+		font-size:66%;
+		padding:.2em;
+		border-radius:50%;
+		line-height:1em;
+		color: white;
+		background: $navAccentPrimary;
+		text-align:center;
+		min-width: 1.1em;
+	}
+	&:hover:after{
+	 	background: white;
+	  	color: $navAccentPrimary;
+	};
+}
+#__BV_popover_3__, #__BV_popover_2__, #__BV_popover_1__{
+  border: none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ .popover-body{
+    padding: 0px !important;
+    p{
+      strong{
+        color: black;
+      }
+      color: grey;
+      margin-bottom: 0;
+    }
+  }
+}
+#__BV_popover_1__{
+  width: 9%;
+}
+#__BV_popover_2__{
+  width: 21%;
+}
+.list-group-item-prime2{
+  background-color: white !important;
+  &:hover, focus{
+    background-color: $navAccentSecondary !important;
+  }
+}
+.aviIcon{
+  color: $aviPopoverIconColor;
+  margin-right: 12px;
+}
+#show-all-mess {
+  background-color: $brandColor !important;
+  strong, a{
+    color: white !important;
+  }
+  }
+  #show-all-notes {
+  background-color: $brandColor !important;
+  strong, a{
+    color: white !important;
+  }
+  }
+  .card{
+    border: none !important;
+  }
+.fa-power-off{
+    color: $UICRed;
+  }
